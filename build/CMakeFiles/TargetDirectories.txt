@@ -1,5 +1,0 @@
-C:/tuzhilkina_n_g/build/CMakeFiles/ALL_BUILD.dir
-C:/tuzhilkina_n_g/build/CMakeFiles/ZERO_CHECK.dir
-C:/tuzhilkina_n_g/build/prj.labs/complex/CMakeFiles/complex.dir
-C:/tuzhilkina_n_g/build/prj.samples/hello/CMakeFiles/hello.dir
-C:/tuzhilkina_n_g/build/prj.samples/minimal_program/CMakeFiles/minimal_program.dir
