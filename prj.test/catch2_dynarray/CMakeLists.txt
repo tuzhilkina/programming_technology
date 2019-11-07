@@ -1,5 +1,0 @@
-add_executable(catch2_dynarray catch2_dynarray.cpp)
-target_link_libraries(catch2_dynarray dynarray)
-include(CTest)
-include(Catch)
-catch_discover_tests(catch2_dynarray)
