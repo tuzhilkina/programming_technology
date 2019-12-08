@@ -1,0 +1,4 @@
+#add_library(dynarray dynarray.h dynarray.cpp)
+add_executable(test_dynarray test_dynarray.cpp)
+target_link_libraries(test_dynarray dynarray)
+set_property(TARGET test_dynarray PROPERTY CXX_STANDARD 17)
