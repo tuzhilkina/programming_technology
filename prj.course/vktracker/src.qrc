@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/src">
+        <file>close.png</file>
+        <file>delete_all.png</file>
+        <file>icon.ico</file>
+        <file>icon.png</file>
+        <file>vktracker2.jpg</file>
+        <file>zvuk.wav</file>
+    </qresource>
+    <qresource prefix="/config">
+        <file>config.ini</file>
+    </qresource>
+</RCC>
