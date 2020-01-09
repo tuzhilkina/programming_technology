@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>vktracker</class>
+ <widget class="QMainWindow" name="vktracker">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>vktracker</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="mouseTracking">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget#centralWidget {
+background-color: rgb(29, 31, 32);
+ }
+</string>
+   </property>
+   <widget class="QGroupBox" name="tools">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>760</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(82, 129, 185);
+border-style: solid;
+border-width: 2px;
+border-radius: 4px;
+border-color: rgb(82, 129, 185)</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="login">
+     <property name="geometry">
+      <rect>
+       <x>295</x>
+       <y>0</y>
+       <width>80</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Helvetica</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 15px;
+font-style: semi bold;
+color: rgb(214, 215, 216);
+background-color: rgb(81, 129, 184);
+border-style: solid;</string>
+     </property>
+     <property name="text">
+      <string>войти</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="load">
+     <property name="geometry">
+      <rect>
+       <x>385</x>
+       <y>0</y>
+       <width>140</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton#load {
+     background-color: rgb(82, 129, 185);
+ }
+ QPushButton#load:pressed {
+     background-color: rgb(51, 94, 143);     
+ }
+ QPushButton#load:hover {
+     background-color: rgb(51, 94, 143);
+ }
+border-style: solid;
+font-size: 15px;
+font-style: semi bold;
+color: rgb(214, 215, 216);
+
+</string>
+     </property>
+     <property name="text">
+      <string>загрузить список</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="logo">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>15</y>
+       <width>190</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="src.qrc">:/src/vktracker2.jpg</pixmap>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userPhoto">
+     <property name="geometry">
+      <rect>
+       <x>525</x>
+       <y>15</y>
+       <width>50</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="userName">
+     <property name="geometry">
+      <rect>
+       <x>595</x>
+       <y>0</y>
+       <width>160</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 15px;
+font-style: semi bold;
+color:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>вход не выполнен</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="logout">
+     <property name="geometry">
+      <rect>
+       <x>295</x>
+       <y>0</y>
+       <width>80</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::TabFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton#logout {
+     background-color: rgb(82, 129, 185);
+ }
+ QPushButton#logout:pressed {
+     background-color: rgb(51, 94, 143);     
+ }
+ QPushButton#logout:hover {
+     background-color: rgb(51, 94, 143);
+ }
+border-style: solid;
+font-size: 15px;
+font-style: semi bold;
+color: rgb(214, 215, 216);
+
+</string>
+     </property>
+     <property name="text">
+      <string>выйти</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="cleanAll">
+     <property name="geometry">
+      <rect>
+       <x>175</x>
+       <y>0</y>
+       <width>60</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Helvetica</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton#cleanAll {
+     background-color: rgb(82, 129, 185);
+ }
+ QPushButton#cleanAll:pressed {
+     background-color: rgb(51, 94, 143);     
+ }
+ QPushButton#cleanAll:hover {
+     background-color: rgb(51, 94, 143);
+ }
+border-style: solid;
+font-size: 15px;
+font-style: semi bold;
+color: rgb(214, 215, 216);
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="src.qrc">
+       <normaloff>:/src/delete_all.png</normaloff>:/src/delete_all.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="closeAll">
+     <property name="geometry">
+      <rect>
+       <x>235</x>
+       <y>0</y>
+       <width>60</width>
+       <height>80</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Helvetica</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> QPushButton#closeAll {
+     background-color: rgb(82, 129, 185);
+ }
+ QPushButton#closeAll:pressed {
+     background-color: rgb(51, 94, 143);     
+ }
+ QPushButton#closeAll:hover {
+     background-color: rgb(51, 94, 143);
+ }
+border-style: solid;
+font-size: 15px;
+font-style: semi bold;
+color: rgb(214, 215, 216);
+
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="src.qrc">
+       <normaloff>:/src/close_all.png</normaloff>:/src/close_all.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="enter">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>760</width>
+      <height>90</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(24, 26, 27);
+border-style: solid;
+border-width: 2px;
+border-radius: 4px;
+border-color: rgb(24, 26, 27);</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>13</y>
+       <width>221</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial</family>
+       <pointsize>-1</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font-size: 13px;
+font-style: semi bold;
+color:rgb(153, 188, 214)</string>
+     </property>
+     <property name="text">
+      <string>Введите id пользователя</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="addLink">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>43</y>
+       <width>720</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Helvetica</family>
+       <pointsize>-1</pointsize>
+      </font>
+     </property>
+     <property name="cursor">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 4px;
+border-color: rgb(70, 74, 77);
+font-size: 15px;
+font-style: semi bold;
+color: rgb(214, 215, 216);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="lists" native="true">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>205</y>
+      <width>760</width>
+      <height>580</height>
+     </rect>
+    </property>
+    <widget class="QListWidget" name="following">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>370</width>
+       <height>580</height>
+      </rect>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget#following {
+background-color: rgb(24, 26, 27);
+border-style: solid;
+border-width: 2px;
+border-radius: 4px;
+border-color: rgb(24, 26, 27);
+ };</string>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="notification">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>0</y>
+       <width>370</width>
+       <height>580</height>
+      </rect>
+     </property>
+     <property name="cursor" stdset="0">
+      <cursorShape>PointingHandCursor</cursorShape>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QListWidget#notification {
+     background-color: rgb(24, 26, 27);
+border-style: solid;
+border-width: 2px;
+border-radius: 4px;
+border-color: rgb(24, 26, 27);
+ };</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>
